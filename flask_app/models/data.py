@@ -37,9 +37,10 @@ column_names = [
     "MI CANCELLATION INDICATOR"
 ]
 
-data_file = "/mnt/c/Users/14023/Downloads/sample_orig_2022.txt"
+#data_file = "/mnt/c/Users/14023/Downloads/sample_orig_2022.txt"
+path_data_file = 'C:/Users/14023/Downloads/sample_orig_2023.txt'
 
-data = pd.read_csv(data_file, sep="|", names=column_names)
+data = pd.read_csv(path_data_file, sep="|", names=column_names)
 
 # Function 1: Get the mean credit score for the whole year
 def get_mean_credit_score():
